@@ -1,0 +1,52 @@
+<!DOCTYPE html> <!-- HTML5 doctype -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- HTML5 charset -->
+    <title>Login Page</title>
+    <!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+    <script src="create_account.js"></script>
+    <link rel="stylesheet" href="create_style.css">
+</head>
+
+<body>
+    <div class="header1">
+        <h1> Welcome to Juan’s Mexican Street Food™ !</h1>
+    </div>
+    <!-- LOGIN FORM-->
+    <div class="container_photo">
+        <button class="btnLogin" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="order.html">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                </div> <!-- end of imgcontainer-->
+                <div class="center">
+                    <div class="container">
+                        <div class="form" id="form">
+                            <div class="form-control">
+                                <input type="text" placeholder="Enter your username" id="username"> <br>
+                                <input type="email" placeholder="Enter your email" id="email"> <br>
+                                <input type="password" placeholder="Enter your password" maxlength="11" id="password">
+                                <br>
+                                <button class="btn" value="Login" onclick="return login()">Login</button>
+                            </div> <!-- end of class form-control -->
+                        </div> <!-- end of class form -->
+                    </div> <!-- end of class container -->
+				</div> <!-- end of class center -->
+            </form> <!-- end of class modal-content animate -->
+        </div> <!-- end of class modal -->
+	</div> <!-- end of class container_photo -->
+
+    <div class="footer">
+        <footer>
+            <p> Copyright &copy; Juan’s Mexican Street Food™ 2021 </p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
